@@ -3,23 +3,13 @@
   padding-bottom: 60px;
 }
 
-<<<<<<< Updated upstream
-.products-pic {
-}
-
-=======
->>>>>>> Stashed changes
 .products-img {
   transform: translateY(50%);
   width: 280px;
   margin-left: auto;
   margin-right: auto;
 
-<<<<<<< Updated upstream
-  // margin-bottom: -50%;
-=======
   margin-top: -140px;
->>>>>>> Stashed changes
 }
 
 .products__subtitle {
@@ -30,11 +20,7 @@
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
-<<<<<<< Updated upstream
-  color: #ffa5ba;
-=======
   color: $sub-title-color;
->>>>>>> Stashed changes
   margin-bottom: 15px;
 }
 
@@ -47,21 +33,13 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-<<<<<<< Updated upstream
-  color: #d41443;
-=======
   color: $title-color;
->>>>>>> Stashed changes
   margin-bottom: 8px;
 }
 
 .products-box {
   width: 280px;
   height: 489px;
-<<<<<<< Updated upstream
-  background: #ffa5ba;
-=======
->>>>>>> Stashed changes
   border-radius: 24px;
 
   margin-right: auto;
@@ -76,17 +54,6 @@
 }
 
 .products-box-1 {
-<<<<<<< Updated upstream
-  background: #ffa5ba;
-}
-
-.products-box-2 {
-  background: #f0d1a5;
-}
-
-.products-box-3 {
-  background: #c2e297;
-=======
   background: $products-1st-bg-color;
 }
 
@@ -96,7 +63,6 @@
 
 .products-box-3 {
   background: $products-3rd-bg-color;
->>>>>>> Stashed changes
 }
 
 .products-box__title {
@@ -109,17 +75,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-<<<<<<< Updated upstream
-  color: #ffffff;
-=======
   color: $text-color-light;
->>>>>>> Stashed changes
 
   margin-bottom: 70px;
 }
 
-<<<<<<< Updated upstream
-=======
 .products-box__title::after {
   content: '';
   position: absolute;
@@ -136,7 +96,6 @@
   margin-bottom: 32px;
 }
 
->>>>>>> Stashed changes
 .products-box__descr {
   font-family: 'DM Sans';
   font-style: normal;
@@ -145,11 +104,7 @@
   line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
-<<<<<<< Updated upstream
-  color: #ffffff;
-=======
   color: $text-color-light;
->>>>>>> Stashed changes
 
   margin-bottom: 32px;
 }
@@ -158,11 +113,6 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
-<<<<<<< Updated upstream
-}
-
-.products-box__overlay {
-=======
 
   width: 40px;
   height: 40px;
@@ -181,5 +131,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
->>>>>>> Stashed changes
+  fill: $text-accent-color;
 }
