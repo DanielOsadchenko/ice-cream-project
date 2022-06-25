@@ -5,7 +5,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 ul,
@@ -16,46 +16,46 @@ ol {
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 .container {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @include mobile {
-        max-width: 480px;
-    }
+  @include mobile {
+    max-width: 480px;
+  }
 
-    @include tablet {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  @include tablet {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    @include desktop {
-        max-width: 1200px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  @include desktop {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
