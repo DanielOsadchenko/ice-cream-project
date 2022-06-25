@@ -3,9 +3,10 @@
   background-color: $advantages-bg-color;
 }
 
-.advantages {
+.wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
 .advantages__item {
