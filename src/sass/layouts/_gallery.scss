@@ -1,0 +1,24 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 43.5px);
+  grid-template-rows: 43.5px 43.5px 43.5px;
+  grid-gap: 2.5px;
+}
+
+.gallery__item {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery__image {
+  object-fit: cover;
+  height: 100%;
+}
+
+.img2 {
+  object-position: 50% 25%;
+}
+
+.img8 {
+  object-position: 95% 50%;
+}
