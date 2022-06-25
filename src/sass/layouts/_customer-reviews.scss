@@ -1,0 +1,99 @@
+.customer__clients-images {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.customer__reviews {
+
+    background-color: $customer-background-color;
+    width: 280px;
+    height: 308px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding: 43 58 26 65;
+    align-content: center;
+    justify-content: center;
+}
+
+.customer__bg-icon {
+    fill: $customer-accent-color;
+}
+
+.customer__clients {
+    position: relative;
+}
+
+.customer__clients-comments {
+    position: absolute;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+    background-image: repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #e1e1e1 31px, #e1e1e1 31px);
+
+
+    color: $text-color-dark;
+}
+
+.customer__icon-quote {
+    position: absolute;
+    z-index: 0;
+    fill: #e1e1e1;
+    top: -15px;
+    left: -10px;
+}
+
+.customer__comments-line-icon {
+    fill: red;
+
+}
+
+
+.customer__ecllips {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.customer__ecllips-icon {
+    fill: $customer-icon-color;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.customer__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+
+    color: $text-color-dark;
+    margin-bottom: 16px;
+
+}
+
+.customer__form {
+    text-align: center;
+}
+
+.customer__icon-bt {
+    opacity: 1;
+}
+
+.customer__form-slide {}
+
+.customer__form-slide-bt {}
+
+.customer__icon-bt:checked .customer__form-slide-bt {
+    opacity: 1;
+}
+
+
+
+// .backdrop-form__input-check :checked+.backdrop-form__checkbox-style .backdrop-form__checkbox-icon
