@@ -1,0 +1,259 @@
+.container {
+    outline: 1px solid red;
+}
+
+hr {
+    border: none;
+    background-color: $mobile-menu-line-color;
+    height: 1px;
+    margin: 0;
+}
+
+
+.header {
+    max-width: 1280px;
+    min-width: 320px;
+    padding-top: 8px;
+    background-color: $hero-bg-color;
+}
+
+.header__container {
+    position: relative;
+}
+
+.logo-img {
+    left: 0;
+    top: 0;
+    width: 199px;
+    height: 50px;
+    padding: 0;
+}
+
+.btn-open-menu {
+    position: absolute;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    top: 17;
+    right: 20;
+}
+
+.btn-close-menu {
+    position: absolute;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    top: 17;
+    right: 20;
+}
+
+.logo-link {
+    height: 100%;
+}
+
+.hero-container {
+    position: relative;
+    height: 100%;
+}
+
+.hero {
+    max-width: 1280px;
+    min-width: 320px;
+    height: 444px;
+    background-color: $hero-bg-color;
+    padding-top: 25px;
+    overflow: hidden;
+}
+
+// .hero_box {
+//     // position: relative;
+// }
+
+.hero-title-block {
+    position: absolute;
+    top: 111px;
+    z-index: 20;
+}
+
+// .hero__img-block {
+// // 
+// }
+
+.hero__ellipse-img {
+    position: absolute;
+    top: 0;
+    left: 36;
+    background-color: $hero-circle-bg-color;
+    width: 346px;
+    height: 344px;
+    border-radius: 100%;
+}
+
+.hero__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-color-light;
+    margin-bottom: 20px;
+}
+
+.hero__img {
+    position: absolute;
+    top: 9;
+    right: 94;
+    width: 171px;
+    height: 410px;
+    
+}
+
+.hero__icecream-img {
+    max-width: 171px;
+    max-height: 410px;
+}
+
+.hero__title-big {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-accent-color;
+}
+
+.hero__btn-list {
+    display: flex;
+    z-index: 2;
+}
+
+.hero__btn-dark {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    height: 24px;
+    width: 62px;
+    color: $text-color-light;
+    background-color: $btn-bg-color-dark;
+    border-radius: 20px;
+    margin-right: 8px;
+    
+}
+
+.hero__btn-light {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    height: 24px;
+    width: 83px;
+    color: $text-color-dark;
+    background-color: $btn-text-color-light;
+    border-radius: 20px;
+}
+
+.mobile-menu {
+    // position: fixed;
+    position: absolute;
+    top: -8;
+    right: 0;
+    z-index: 25;
+
+    background-color: $mobile-menu-bg-color;
+    height: 100vh;
+    width: 254px;
+}
+
+// .nav__list {
+
+// }
+
+.nav__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28px;
+    // align-items: center;
+    color: $mobile-menu-text-color;
+    border-top: 1px solid $mobile-menu-line-color;
+    &:last-child{
+        border-bottom: 1px solid $mobile-menu-line-color;
+    }
+}
+
+.nav__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    display: block;
+    align-items: center;
+    padding: 10px 20px 13px 20px;
+    color: $mobile-menu-text-color;
+
+}
+
+
+
+.btn-mobile-menu {  
+    border-radius: 22px;
+    height: 44px;
+    width: 209px;
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 33px;
+    margin-left: 20px;
+    border: 0;
+    background-color: $mobile-menu-btn-color;
+ 
+}
+
+.btn-mobile-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    color: $mobile-menu-text-btn-color;
+}
+
+.btn-mobile-icon {
+    display: inline-block;
+    margin-left: 15px;   
+}
+
+// .btn-open-menu .btn-close-icon {
+//     display: none;
+// }
+
+// .btn-open-menu .mobile-menu {
+//     display: none;
+// }
+
+// .btn-open-menu.is-open .btn-close-icon {
+//     display: block;
+// }
+
+// .btn-open-menu.is-open .mobile-menu {
+//     display: block;
+// }
+
+// .btn-open-menu.is-open .btn-open-icon {
+//     display: none;
+// }
+
+
