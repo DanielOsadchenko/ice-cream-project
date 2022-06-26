@@ -1,0 +1,92 @@
+
+<!-- header-section -->
+
+<header class="header">
+    <div class="header__container container">
+        <a class="logo-link link" href="/">
+            <svg class="logo-img">
+                <use href="./images/icons.svg#logo"></use>
+            </svg>
+        </a>
+        <button class="btn-open-menu" type="button" aria-expanded="false" data-menu-button>
+            <svg class="btn-open-icon" width="20" height="12">
+                <use href="./images/icons.svg#burger"></use>
+            </svg>
+        </button>
+
+        <div class="mobile-menu visually-hidden" data-menu>
+            <button class="btn-close-menu" type="button">
+                <svg class="btn-close-icon" width="20" height="12">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+
+            <button class="btn-mobile-menu" type="button"><span class="btn-mobile-title">Buy now</span>
+                <svg class="btn-mobile-icon" width="6" height="8">
+                    <use href="/src/images/icons.svg#arrow"></use>
+                </svg>
+            </button>
+
+            <nav class="nav">                
+                <ul class="list nav__list">
+                    <li class="nav__item"><a class="link nav__link" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="link nav__link" href="#advantages">About us</a></li>
+                    <li class="nav__item"><a class="link nav__link" href="#about">How it’s made?</a></li>
+                    <li class="nav__item"><a class="link nav__link" href="#products">Our products</a></li>
+                    <li class="nav__item"><a class="link nav__link" href="#contact">Contact</a></li>
+                </ul>                
+            </nav>
+        </div>
+       
+    </div>
+</header>
+
+
+<main>
+
+    <!-- hero-section -->
+
+    <section class="hero">
+        <div class="hero-container container">
+
+            <div class="hero-title-block">
+                <h1 class="hero__title">ice cream <br> made with <br><span class="hero__title-big">passion</span></h1>
+
+                <ul class="hero__btn-list list">
+                    <li>
+                        <a class="hero__btn-dark">Products</a>
+                    </li>
+                    <li>
+                        <a class="hero__btn-light">How it’s made?</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- <div class="hero__img-block"> -->
+            <div class="hero__ellipse-img">
+                <picture class="hero__img">            
+                    <source
+                        media="(max-width: 767px)"
+                        srcset="
+                            ./images/hero/hero-icecream-320-1x.png 1x,
+                            ./images/hero/hero-icecream-320-2x.png 2x"
+                        
+                        type="image/png"
+                    />
+    
+                    <img 
+                        class="hero__icecream-img"
+                        src="./images/hero/hero-icecream-320-1x.png" 
+                        alt="Ice Cream" 
+                        width="171" 
+                        height="410"
+                    />
+                </picture>
+            </div>
+            
+
+        </div>
+    </section>
+</main>
+
+<!-- <script src="./menu.js"></script> -->
