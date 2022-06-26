@@ -1,15 +1,15 @@
+.advantages {
+  display: grid;
+  grid-template-columns: minmax(320px, 480px);
+  grid-template-rows: auto;
+}
 .advantages__section {
-  margin-bottom: 60px;
   background-color: $advantages-bg-color;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-
 .advantages__item {
+  align-self: center;
+
   &:not(:last-child) {
     margin-bottom: 32px;
   }
