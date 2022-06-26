@@ -7,6 +7,11 @@
         display: flex;
         justify-content: space-between;
     }
+
+         @media screen and (min-width: 1200px) {
+            width: 1200px;
+            
+         }
 }
 
 .footer__title {
@@ -17,13 +22,11 @@ font-family: $title-font-family;
 
     margin-bottom: 40px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 82px;
-    }
+@media screen and (min-width: 1200px) {
+        margin-bottom: 0;
 
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 97px;
     }
+   
 
 &-subtitle {
 
@@ -36,13 +39,13 @@ font-family: $title-font-family;
 
     @media screen and (min-width: 768px) {
         width: 340px;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
         font-size: 26px;
         letter-spacing: 0.04em;
         line-height: 1.15;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         width: 472px;
         margin-bottom: 16px;
         font-size: 30px;
@@ -67,19 +70,35 @@ font-family: $title-font-family;
         font-size: 48px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         letter-spacing: 0.06em;
-        font-size: 58px;
-        line-height: 1.13;
-        width: 100%;
+        font-size: 57px;
+        
+        width: 474px;
     }
 } }
 
 .footer__social {
-    display: flex;
-    
+    margin-bottom: 40px;
+   
+
+@media screen and (min-width: 768px) {
+        margin-bottom: 59px;
+        display: flex;
         flex-direction: column;
-    
+        justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 1200px) {
+        /*letter-spacing: 0.06em;
+        font-size: 58px;
+        line-height: 1.13;
+        width: 100%;*/
+        margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+    }
 
     &-list {
     display: flex;
@@ -88,8 +107,7 @@ font-family: $title-font-family;
 }
 
 &-item {
-width: 32px;
-    height: 32px;
+
     margin-right: 28.24px;
 
     &:last-child {
@@ -97,17 +115,15 @@ width: 32px;
     }
 
     @media screen and (min-width: 768px) {
-        width: 34px;
-            height: 34px;
+        
         margin-right: 30px;
 
 &:last-child {
         margin-right: 0;
         } }
 
-    @media screen and (min-width: 1280px) {
-        width: 34px;
-            height: 34px;
+    @media screen and (min-width: 1200px) {
+        
         margin-right: 30px;
         &:last-child {
                 margin-right: 0;
@@ -123,8 +139,9 @@ width: 32px;
     border-radius: 50%;
     
     background: $footer-icon-color;
-    display: block;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width: 768px) {
@@ -132,7 +149,7 @@ width: 32px;
         height: 34px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         width: 34px;
         height: 34px;
     }
@@ -147,19 +164,6 @@ width: 32px;
 
 &-icon {
         fill: $footer-icon-light;
-        width: 32px;
-    height: 32px;
-    
-
-    @media screen and (min-width: 768px) {
-        width: 34px;
-        height: 34px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 34px;
-        height: 34px;
-    }
 }
 }
 
@@ -167,7 +171,7 @@ width: 32px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 40px;
+    
 
     font-family: DM Sans;
     font-weight: 700;
@@ -179,8 +183,9 @@ width: 32px;
         margin-bottom: 0;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 0;
+        
     }
 
 
@@ -194,7 +199,7 @@ width: 32px;
         font-size: 14px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         font-size: 16px;
     }
 }
@@ -210,7 +215,7 @@ width: 32px;
         font-size: 14px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         font-size: 16px;
     }
 
@@ -257,7 +262,7 @@ width: 32px;
         
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         height: 37px;
         display: flex;
         justify-content: center;
