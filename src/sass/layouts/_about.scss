@@ -39,7 +39,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 .card__item-text {
@@ -54,21 +54,26 @@
   color: #000000;
   @media screen and (min-width: 768px) {
     width: 334px;
-    display: block;
+    margin-top: 0;
   }
 }
+
 .card__item-accent {
   color: #907e82;
   margin-bottom: 20px;
+  margin-top: -90px;
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
 }
-.card__img-secondary {
-  position: absolute;
-
-  padding-right: 40px;
+.card__item-pic {
+  display: flex;
+  justify-content: space-between;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
 .about__btn {
   display: flex;
 
@@ -91,8 +96,10 @@
   fill: $text-accent-color;
   margin-left: 14px;
 }
-.card__box {
+.card {
   @media screen and (min-width: 768px) {
     display: flex;
+
+    justify-content: space-between;
   }
 }
