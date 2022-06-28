@@ -10,13 +10,16 @@ h6 {
 
 ul,
 ol {
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
 }
 
 button {
   cursor: pointer;
+
+  transition: color 250ms $timig-function,
+    background-color 300ms $timig-function, box-shadow 250ms $timig-function;
 }
 
 img {
@@ -31,6 +34,9 @@ body {
 
 .link {
   text-decoration: none;
+
+  transition: color 250ms $timig-function,
+    background-color 300ms $timig-function;
 }
 
 .list {

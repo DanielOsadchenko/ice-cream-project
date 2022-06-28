@@ -13,6 +13,11 @@
   &--without-padding {
     padding-left: 0;
     padding-right: 0;
+
+    @include desktop {
+      padding-left: 93px;
+      padding-right: 93px;
+    }
   }
 }
 
@@ -37,6 +42,14 @@
   overflow: hidden;
   border-radius: 8px;
   aspect-ratio: 1/1;
+
+  transition: transform 200ms ease-in, z-index 350ms ease-in;
+
+  &:hover {
+    transform: scale(1.15);
+
+    z-index: 999;
+  }
 }
 
 .gallery__image {
@@ -67,6 +80,12 @@
 .div4 {
   grid-column: 3/5;
   grid-row: 1/7;
+
+  &:hover {
+    transform: scale(1.05);
+
+    z-index: 999;
+  }
 }
 .div5 {
   grid-column: 3/4;
