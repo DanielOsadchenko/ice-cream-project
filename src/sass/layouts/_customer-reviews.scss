@@ -19,12 +19,21 @@
         margin: 32px auto 4px;
     }
 
+    @media screen and (min-width: 1200px) {
+        width: 968px;
+        margin: 32px auto 4px;
+    }
+
 }
+
+
 
 .customer__comment-clients {
     position: relative;
     justify-content: center;
     align-items: center;
+
+
 }
 
 .customer__comment-icon {
@@ -51,13 +60,25 @@
     z-index: 1;
 
     @media screen and (min-width: 768px) {
-
         font-size: 14px;
         line-height: 2.16;
         letter-spacing: 0.04em;
+        background-image: repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #e1e1e1 31px, #e1e1e1 31px), url(/src/images/reviews/quotse-tablet.svg);
         background-position: 6px 38px, 6px 20px;
         background-size: calc(100% - 12px) calc(100% - 60px), 60px 40px;
         padding: 37px 55px 44px 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1034px;
+        min-height: 138px;
+        background-image: repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 29px, #e1e1e1 30px, #e1e1e1 31px), url(/src/images/reviews/quotse.svg);
+        background-position: 106px 46px, 105px 32px;
+        background-size: calc(100% - 212px) calc(100% - 60px), 60px 40px;
+        margin-bottom: 16px;
+        padding: 47px 142px 39px;
+        font-size: 16px;
+        line-height: 1.86;
     }
 }
 
