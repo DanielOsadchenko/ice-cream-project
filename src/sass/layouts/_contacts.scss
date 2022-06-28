@@ -201,7 +201,13 @@
 .contacts__locations:focus {
     background: #FFFFFF;
 }
+.contacts__franchise:focus .franchise__title {
+    color: #ffffff;
+}
 
+.contacts__locations:focus .locations__title {
+    color: #D41443;
+}
 
 .contacts__franchise:hover .franchise__title {
     color: #ffffff;
