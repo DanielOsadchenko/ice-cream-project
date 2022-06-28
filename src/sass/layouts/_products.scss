@@ -295,11 +295,6 @@
   }
 }
 
-.products-box__btn:hover .products-box__overlay,
-.products-box__btn:focus .products-box__overlay {
-  transform: translateY(0);
-}
-
 .products-box__overlay:hover,
 .products-box__overlay:focus {
   transform: translateY(0);
