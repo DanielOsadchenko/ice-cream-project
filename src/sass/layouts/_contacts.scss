@@ -278,11 +278,13 @@
 }
 
 
-.contacts__franchise:hover .franchise__title {
+.contacts__franchise:hover,
+.contacts__franchise:focus .franchise__title {
     color: #ffffff;
 }
 
-.contacts__locations:hover .locations__title {
+.contacts__locations:hover,
+.contacts__locations:focus .locations__title {
     color: #D41443;
 }
 
