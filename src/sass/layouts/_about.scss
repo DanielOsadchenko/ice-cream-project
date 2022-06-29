@@ -5,6 +5,11 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/about/milk_pc_1x.png);
+    background-repeat: no-repeat;
+    background-position: 15% 85%;
+  }
 }
 .about__subtitle {
   font-family: $title-font-family;
@@ -63,6 +68,8 @@
   color: #000000;
   @media screen and (min-width: 768px) {
     width: 334px;
+    font-size: 14px;
+    line-height: 1.76;
     margin-top: 0;
   }
   @media screen and (min-width: 1200px) {
@@ -80,6 +87,7 @@
   margin-top: -90px;
   @media screen and (min-width: 768px) {
     margin-top: 40px;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -104,6 +112,10 @@
   padding-right: 37px;
   height: 44px;
   color: #d41443;
+  &:hover,
+  &:focus {
+    background-color: #ECEBEB;
+  }
 }
 .about__btn-icon {
   fill: $text-accent-color;
@@ -124,20 +136,15 @@
   }
 }
 .card__item-first {
-  margin-right: 99px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 99px;
+  }
 }
-.about__section {
-  position: relative;
-}
+
 .card__item-pic {
   display: flex;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
     display: none;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
   }
 }
