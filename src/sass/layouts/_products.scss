@@ -334,14 +334,18 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 250px;
   border-radius: 24px;
 
   margin-right: auto;
   margin-left: auto;
 
   transition: transform 400ms;
-  transform: translateY(-101%);
+  transform: translateY(-100%);
+
+  @include tablet {
+    height: 265px;
+  }
 }
 
 .products-box__overlay--1 {
@@ -412,13 +416,8 @@
   }
 }
 
-.products-box__overlay:hover .products-box__btn,
-.products-box__overlay:focus .products-box__btn {
-  transform: translateY(0);
-}
-
-.products-box__btn:hover .products-box__overlay,
-.products-box__btn:focus .products-box__overlay {
+.products-box__btn:hover ~ .products-box__overlay,
+.products-box__btn:focus ~ .products-box__overlay {
   transform: translateY(0);
 }
 
@@ -437,7 +436,7 @@
 .products-box__btn:hover,
 .products-box__btn:focus {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.25), 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .products-box__btn-icon {
