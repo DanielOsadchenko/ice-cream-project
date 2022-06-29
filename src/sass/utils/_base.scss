@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 p,
 h1,
 h2,
@@ -31,7 +35,6 @@ img {
 body {
   font-family: 'DM Sans', sans-serif;
 }
-
 .link {
   text-decoration: none;
 
