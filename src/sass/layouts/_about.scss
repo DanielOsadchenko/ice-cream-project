@@ -1,3 +1,17 @@
+.about__container {
+  @media screen and (max-width: 767px) {
+      background-image: url(../images/about/milk_pc_1x.png);
+      background-repeat: no-repeat;
+      background-position: 15% 82%;
+      background-size: 100%;
+    }
+  
+  @media screen and (min-width: 1200px) {
+  background-image: url(../images/about/milk_pc_1x.png);
+  background-repeat: no-repeat;
+  background-position: 15% 85%;
+}
+}
 .about__section {
   background-color: $about-bg-color;
   padding-top: 60px;
@@ -5,6 +19,7 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
+  
 }
 .about__subtitle {
   font-family: $title-font-family;
@@ -22,6 +37,10 @@
     font-size: 26px;
     line-height: 1.16;
     margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
   }
 }
 .about__title {
@@ -41,9 +60,14 @@
     font-size: 48px;
     margin-bottom: 40px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    margin-bottom: 60px;
+  }
 }
 .card__item-text {
-  width: 220px;
+  max-width: 400px;
   margin-top: 40px;
   font-family: 'DM Sans';
   font-style: normal;
@@ -54,23 +78,30 @@
   color: #000000;
   @media screen and (min-width: 768px) {
     width: 334px;
+    font-size: 14px;
+    line-height: 1.76;
     margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
   }
 }
 
 .card__item-accent {
   color: #907e82;
   margin-bottom: 20px;
-  margin-top: -90px;
+  // margin-top: 90px;
   @media screen and (min-width: 768px) {
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
-}
-.card__item-pic {
-  display: flex;
-  justify-content: space-between;
-  @media screen and (min-width: 768px) {
-    display: none;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.94;
   }
 }
 
@@ -91,15 +122,39 @@
   padding-right: 37px;
   height: 44px;
   color: #d41443;
+  &:hover,
+  &:focus {
+    background-color: #ECEBEB;
+  }
 }
 .about__btn-icon {
   fill: $text-accent-color;
   margin-left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card {
   @media screen and (min-width: 768px) {
     display: flex;
 
     justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.card__item-first {
+  @media screen and (min-width: 1200px) {
+    margin-right: 99px;
+  }
+}
+
+.card__item-pic {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

@@ -159,11 +159,20 @@ font-family: $title-font-family;
         &-link:focus {
         background-color: $footer-accent-color;
         outline: none;
+        
     }
-
+&-link:hover > &-icon {
+    transform: rotate(360deg);
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&-link:focus > &-icon {
+    transform: rotate(360deg);
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 &-icon {
         fill: $footer-icon-light;
+        
 }
 }
 
