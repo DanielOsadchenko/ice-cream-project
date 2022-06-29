@@ -42,11 +42,11 @@
   overflow: hidden;
   border-radius: 8px;
   aspect-ratio: 1/1;
-
-  transition: transform 200ms ease-in, z-index 350ms ease-in;
+  z-index: 900;
+  transition: transform 200ms ease-in, z-index 100ms ease-in;
 
   &:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
 
     z-index: 999;
   }
