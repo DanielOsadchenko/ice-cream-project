@@ -97,6 +97,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url(../images/advantages/advantage-1@2x.png);
+      background-size: 33px 50px;
     }
   @include tablet {
     bottom: 106px;
@@ -116,6 +117,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url(../images/advantages/advantage-2@2x.png);
+      background-size: 50px 50px;
     }
   @include tablet {
     bottom: 106px;
@@ -135,6 +137,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url(../images/advantages/advantage-3@2x.png);
+      background-size: 44px 50px;
     }
   @include tablet {
     bottom: 106px;
