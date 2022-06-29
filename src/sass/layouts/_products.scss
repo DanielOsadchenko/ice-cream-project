@@ -1,6 +1,7 @@
 .products-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  position: relative;
 }
 
 .products__list {
@@ -8,14 +9,6 @@
     display: flex;
     justify-content: center;
   }
-
-  // @include tablet {
-  //   margin: -16px;
-  // }
-
-  // @include desktop {
-  //   margin: -16px;
-  // }
 }
 
 .products__item {
@@ -25,8 +18,6 @@
     &:last-child {
       margin-right: 0;
     }
-    // width: calc((100% - 6 * 16px) / 3);
-    // margin: 16px;
   }
 
   @include desktop {
@@ -212,6 +203,103 @@
   }
 }
 
+.products-box__dbllayer {
+  position: relative;
+  overflow: hidden;
+}
+
+.products-box__overlay {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  transition: transform 400ms;
+  transform: translateY(100%);
+}
+
+.products-box__overlay--1 {
+  background: $products-1st-bg-color;
+}
+
+.products-box__overlay--2 {
+  background: $products-2nd-bg-color;
+}
+
+.products-box__overlay--3 {
+  background: $products-3rd-bg-color;
+}
+
+.products-box__overlay-title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-color-light;
+
+  margin-bottom: 30px;
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.products-box__overlay-info {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-color-light;
+
+  margin-bottom: 15px;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.13;
+  }
+}
+
+.products-box__overlay-descr {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $text-color-light;
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.products-box__overlay:hover,
+.products-box__overlay:focus {
+  transform: translateY(0);
+}
+
 .products-box__btn {
   display: block;
   margin-right: auto;
@@ -221,7 +309,7 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: #ffffff;
+  background-color: $btn-bg-color-light;
 }
 
 .products-box__btn:hover,
@@ -241,5 +329,5 @@
 .products-box__btn:hover .products-box__btn-icon,
 .products-box__btn:focus .products-box__btn-icon {
   transform: rotate(270deg);
-  fill: #ffffff;
+  fill: $btn-bg-color-light;
 }
