@@ -2,7 +2,7 @@
   @media screen and (max-width: 767px) {
       background-image: url(../images/about/milk_pc_1x.png);
       background-repeat: no-repeat;
-      background-position: 15% 78%;
+      background-position: 15% 82%;
       background-size: 100%;
     }
   
@@ -67,7 +67,7 @@
   }
 }
 .card__item-text {
-  width: 220px;
+  max-width: 400px;
   margin-top: 40px;
   font-family: 'DM Sans';
   font-style: normal;
