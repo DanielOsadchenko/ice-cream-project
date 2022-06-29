@@ -1,26 +1,39 @@
 
 <!-- header-section -->
 
-<header class="header">
+<header>
     <div class="header__container container">
-        <a class="logo-link link" href="/">
-            <svg class="logo-img">
-                <use href="./images/icons.svg#logo"></use>
-            </svg>
-        </a>
-        <button class="btn-open-menu" type="button" aria-expanded="false" data-menu-button>
-            <svg class="btn-open-icon" width="20" height="12">
-                <use href="./images/icons.svg#burger"></use>
+
+        <nav class="navigation">   
+            <a class="logo-link link" href="/">
+                <svg class="logo-img">
+                    <use href="./images/icons.svg#logo"></use>
+                </svg>
+            </a>
+            
+            <ul class="list navigation__list">
+                <li class="navigation__item"><a class="link navigation__link current" href="#home">Home</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#advantages">About us</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#about">How it’s made?</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#products">Our products</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#contact">Contact</a></li>
+            </ul>                
+        </nav>
+
+        <button class="btn-menu" type="button" aria-expanded="false" data-menu-button>
+            <svg class="btn-menu-icons" width="20" height="12">
+                <use class="btn-menu-burger" href="./images/icons.svg#burger"></use>
+                <use class="btn-menu-close" href="./images/icons.svg#close"></use>
             </svg>
         </button>
 
-        <div class="mobile-menu visually-hidden" data-menu>
-            <button class="btn-close-menu" type="button">
-                <svg class="btn-close-icon" width="20" height="12">
-                    <use href="./images/icons.svg#close"></use>
-                </svg>
-            </button>
+        <button class="btn-top" type="button"><span class="btn-mobile-title">Buy now</span>
+            <svg class="btn-mobile-icon" width="6" height="8">
+                <use href="/src/images/icons.svg#arrow"></use>
+            </svg>
+        </button>
 
+        <div class="mobile-menu" data-menu>
             <button class="btn-mobile-menu" type="button"><span class="btn-mobile-title">Buy now</span>
                 <svg class="btn-mobile-icon" width="6" height="8">
                     <use href="/src/images/icons.svg#arrow"></use>
@@ -29,7 +42,7 @@
 
             <nav class="nav">                
                 <ul class="list nav__list">
-                    <li class="nav__item"><a class="link nav__link" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="link nav__link current" href="#home">Home</a></li>
                     <li class="nav__item"><a class="link nav__link" href="#advantages">About us</a></li>
                     <li class="nav__item"><a class="link nav__link" href="#about">How it’s made?</a></li>
                     <li class="nav__item"><a class="link nav__link" href="#products">Our products</a></li>
@@ -49,22 +62,111 @@
     <section class="hero">
         <div class="hero-container container">
 
-            <div class="hero-title-block">
+            <div class="hero__title-block">
                 <h1 class="hero__title">ice cream <br> made with <br><span class="hero__title-big">passion</span></h1>
 
                 <ul class="hero__btn-list list">
                     <li>
-                        <a class="hero__btn-dark">Products</a>
+                        <a class="hero__btn-dark" href="#products">Products</a>
                     </li>
                     <li>
-                        <a class="hero__btn-light">How it’s made?</a>
+                        <a class="hero__btn-light" href="#about">How it’s made?</a>
                     </li>
                 </ul>
+
+                <h2 class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</h2>
             </div>
+
+<!-- 
+            <div>
+                <figure></figure>
+                <p>16</p>
+                <p>cafes</p>
+    
+                <p>23</p>
+                <p>food trucks</p>
+            </div> -->
             
-            <!-- <div class="hero__img-block"> -->
+
+            <picture class="hero__img-milk">
+
+                <source
+                    media="(max-width: 1280px)"
+                    srcset="
+                        ./images/hero/milk-1280-1x.png 1x,
+                        ./images/hero/milk-1280-2x.png 2x"
+                    
+                    type="image/png"
+                />
+                
+                <source
+                    media="(max-width: 768px)"
+                    srcset="
+                        ./images/hero/milk-768-1x.png 1x,
+                        ./images/hero/milk-768-2x.png 2x"
+                    
+                    type="image/png"
+                />
+
+                <img 
+                    class="hero__img-milk-md"
+                    src="./images/hero/milk-768-1x.png" 
+                    alt="Ice Cream" 
+                    width="152" 
+                    height="154"
+                />
+            </picture>
+
+            <picture class="hero__img-girl">
+
+                <source
+                    media="(max-width: 1200px)"
+                    srcset="
+                        ./images/hero/girl-1200-1x.png 1x,
+                        ./images/hero/girl-1200-2x.png 2x"
+                    
+                    type="image/png"
+                />
+                
+                <source
+                    media="(max-width: 768px)"
+                    srcset="
+                        ./images/hero/girl-768-1x.png 1x,
+                        ./images/hero/girl-768-2x.png 2x"
+                    
+                    type="image/png"
+                />
+
+                <img 
+                    class="hero__img-girl-md"
+                    src="./images/hero/girl-768-1x.png" 
+                    alt="Ice Cream" 
+                    width="152" 
+                    height="154"
+                />
+            </picture>
+        
             <div class="hero__ellipse-img">
-                <picture class="hero__img">            
+                <picture class="hero__img">
+
+                    <source
+                        media="(max-width: 1200px)"
+                        srcset="
+                            ./images/hero/hero-icecream-1280-1x.png 1x,
+                            ./images/hero/hero-icecream-1280-2x.png 2x"
+                        
+                        type="image/png"
+                    />
+                    
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="
+                            ./images/hero/hero-icecream-768-1x.png 1x,
+                            ./images/hero/hero-icecream-768-2x.png 2x"
+                        
+                        type="image/png"
+                    />
+
                     <source
                         media="(max-width: 767px)"
                         srcset="
@@ -83,10 +185,9 @@
                     />
                 </picture>
             </div>
-            
 
         </div>
     </section>
 </main>
 
-<!-- <script src="./menu.js"></script> -->
+<script src="./menu.js"></script>
