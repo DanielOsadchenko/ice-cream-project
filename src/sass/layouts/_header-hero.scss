@@ -592,7 +592,10 @@ header {
 
     background-color: $mobile-menu-bg-color;
     height: 100vh;
-    width: 250px;
+    width: 80vw;
+    @include tablet {
+        width: 65vw;
+    }
 
     &.is-open {
         display: block;
