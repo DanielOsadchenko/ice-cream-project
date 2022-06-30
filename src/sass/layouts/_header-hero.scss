@@ -613,7 +613,7 @@ header {
     height: 100vh;
     width: 80vw;
     @include tablet {
-        width: 65vw;
+        width: 62vw;
     }
 
     &.is-open {
@@ -694,7 +694,7 @@ header {
     @media screen and (min-width: 1200px) {
         position: absolute;
         top: 25;
-        right: 0;
+        right: 15;
         width: 159px;
     }
 }
@@ -735,7 +735,7 @@ header {
 }
 .hero__points {
     position: absolute;
-    right: 0;
+    right: 32px;
     display: flex;
     padding-top: 5px;
     padding-right: 9px;
@@ -746,6 +746,7 @@ header {
 
     @include desktop {
         padding-right: 16px;
+        right: 15;
     }
 }
 
